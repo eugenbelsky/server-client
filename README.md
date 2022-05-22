@@ -19,3 +19,6 @@ Deployment process is executed in the following order:
 ```bash
 helm install server-client ./helm --dependency-update -i
 ```
+
+# Notes 
+This setup uses a pretty dirty helm chart and exposed secret values which makes it dangerous and unusable for the prod environment.  Also, such a tight coupling should not take place when running an enterprise system due to scalability complications and flaws. 
